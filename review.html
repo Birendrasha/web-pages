@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Meridan - Guest Reviews </title>
+    
+    <link rel="stylesheet" href="./review.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="site-header">
+            <h1>Royal Meridan</h1>
+            <p class="head-para">Share your exquisite dining experience with us.</p>
+        </div>
+
+            <h2>Our Guests' Overall Impression</h2>
+            <div class="average-stars">
+                <span aria-label="Five out of five stars">★★★★★</span>
+            </div>
+            <p class="summary">Currently, we have an average rating of 5 out of 5, based on 825 valued guest reviews.</p>
+        </div>
+
+        <div class="review-submission"></div>
+            <h2>Tell Us About Your Visit</h2>
+            <form id="guest-review-form">
+                
+                <div class="form-group">
+                    <label for="reviewer-name">Your Name</label>
+                    <input type="text" id="reviewer-name" placeholder="eg..Abhijeet" required>
+                    <p class="form-help-text">How would you like your name to appear with your review?</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-rating">Your Rating</label>
+                    <select id="review-rating" required>
+                        <option value="">Choose how many stars...</option>
+                        <option value="5">★★★★★ (Exceptional!)</option>
+                        <option value="4">★★★★☆ (Highly Recommended)</option>
+                        <option value="3">★★★☆☆ (Good Experience)</option>
+                        <option value="2">★★☆☆☆ (Could Be Better)</option>
+                        <option value="1">★☆☆☆☆ (Disappointing)</option>
+                    </select>
+                    <p class="form-help-text">Select the star rating that best reflects your experience.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="review-comment">Your Detailed Review</label>
+                    <textarea id="review-comment" name="review-comment" rows="8" placeholder="Share your honest thoughts: What did you love? What could be improved? Specific dishes or service moments are always helpful!" required aria-describedby="comment-help"></textarea>
+                    <p>Please provide details about your dining experience. Your feedback helps us improve!</p>
+                </div>
+
+                <button type="submit" class="submit-review-btn">Submit Your Review</button>
+            </form>
+        </div>
+
+        <div class="guest-reviews-display"></div>
+            <h2>Insights from Our Esteemed Guests</h2>
+
+            <div class="review-card">
+                <div class="review-metadata">
+                    <h3 class="reviewer-name">Vanshita</h3>
+                    <div class="review-stars" aria-label="Five out of five stars">★★★★★</div>
+                </div>
+                <p class="review-text">
+                    "An absolutely unforgettable evening. The service was impeccable from the moment we walked in. The tasting menu was a journey of flavors, and the ambiance was perfect for our anniversary. Highly recommend for a truly special occasion!"
+                </p>
+                <p class="review-date">Reviewed on: October 25, 2025</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-metadata">
+                    <h3 class="reviewer-name">Chintu</h3>
+                    <div class="review-stars" aria-label="Five out of five stars">★★★★★</div>
+                </div>
+                <p class="review-text">
+                    "A beautiful restaurant with stunning decor and a pleasant atmosphere. The food was delicious, especially the pan-seared sea bass. My only critique is that the main course took a little longer than expected to arrive, but the staff was very apologetic and attentive throughout."
+                </p>
+                <p class="review-date">Reviewed on: October 22, 2025</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-metadata">
+                    <h3 class="reviewer-name">Amarjeet </h3>
+                    <div class="review-stars" aria-label="Five out of five stars">★★★★★</div>
+                </div>
+                <p class="review-text">
+                    "We celebrated a family birthday here, and the team went above and beyond to make it a memorable event. The culinary experience was excellent, though we found the portion sizes to be a bit modest considering the premium pricing. Overall, a truly wonderful and elegant experience."
+                </p>
+                <p class="review-date">Reviewed on: October 19, 2025</p>
+            </div>
+
+        </div>
+    </div>
+ </body>
+</html>
